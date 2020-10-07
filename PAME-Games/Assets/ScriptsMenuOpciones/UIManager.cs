@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public GameObject optionsPanel;
+    public GameObject settingsPanel;
 
     public void OptionsPanel()
     {
@@ -22,6 +23,14 @@ public class UIManager : MonoBehaviour
     public void AnotherOptions()
     {
         //SOUND / MUSIC / GRAPHICS 
+        optionsPanel.SetActive(false);
+        settingsPanel.SetActive(true);
+    }
+
+    public void GoOptionsPanel()
+    {
+        optionsPanel.SetActive(true);
+        settingsPanel.SetActive(false);
     }
 
     public void GoMainMenu()
