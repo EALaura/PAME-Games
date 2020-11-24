@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // Movimiento del Jugador
     void Update()
     {
         if(Input.GetKey(KeyCode.D)){
